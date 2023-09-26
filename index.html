@@ -23,50 +23,54 @@
     <header class="m-8 md:hidden">
       <img src="./images/logo.svg" alt="logo" />
     </header>
+
+    <div class="mb-20 hidden md:block absolute top-10 left-40">
+      <img src="./images/logo.svg" alt="logo" />
+    </div>
+
     <div
       class="hero flex flex-col-reverse text-center md:text-left align-middle md:flex-row bg-lg1 md:h-screen"
     >
       <div
-        class="bgm container mt-10 md:mt-0 md:pt-10 px-2 md:px-40 md:bg-[url('/images/bg-pattern-desktop.svg')]"
+        class="flex items-center container mt-10 md:mt-0 md:pt-10 px-2 md:px-40 md:pr-60 md:bg-[url('/images/bg-pattern-desktop.svg')]"
       >
-        <div class="mb-20 hidden md:block">
-          <img src="./images/logo.svg" alt="logo" />
-        </div>
-        <h1 class="tracking-base uppercase text-4xl md:text-5xl">
-          <span class="font-light text-desaturatedRed">We're</span><br />
-          <span class="font-semibold">coming</span><br />
-          <span class="font-semibold">soon</span>
-        </h1>
-        <p class="m-5 md:my-5 md:mx-0 text-desaturatedRed">
-          Hello fellow shoppers! We're currently building our new fashion store.
-          Add your email below to stay up-to-date with announcements and our
-          launch deals.
-        </p>
-        <div class="flex flex-col mb-24 mx-4 md:my-5 md:mx-0 relative">
-          <input
-            id="email-input"
-            class="bg-transparent focus:outline-none focus:ring-2 focus:ring-softRed ring-1 ring-desaturatedRed border rounded-full py-4 pl-8 text-desaturatedRed placeholder:text-desaturatedRed"
-            type="text"
-            placeholder="Email Address"
-          />
-          <img
-            id="icon-error"
-            class="hidden w-5 h-5 absolute top-4 right-24"
-            src="./images/icon-error.svg"
-            alt="icon-error"
-          />
-          <div
-            id="submit-btn"
-            class="bg-lg2 hover:opacity-80 hover:shadow-2xl hover:cursor-pointer max-w-fit px-10 py-5 top-sm rounded-full absolute -right-1 shadow-xl"
-          >
-            <img src="./images/icon-arrow.svg" alt="submit-btn" />
-          </div>
-          <p
-            id="message"
-            class="hidden text-softRed text-left text-sm ml-8 mt-2"
-          >
-            Please provide a valid email
+        <div>
+          <h1 class="tracking-base uppercase text-4xl md:text-6xl">
+            <span class="font-light text-desaturatedRed">We're</span><br />
+            <span class="font-semibold">coming</span><br />
+            <span class="font-semibold">soon</span>
+          </h1>
+          <p class="m-5 md:my-5 md:mx-0 text-desaturatedRed">
+            Hello fellow shoppers! We're currently building our new fashion
+            store. Add your email below to stay up-to-date with announcements
+            and our launch deals.
           </p>
+          <div class="flex flex-col mb-24 mx-4 md:my-5 md:mx-0 relative">
+            <input
+              id="email-input"
+              class="bg-transparent focus:outline-none focus:ring-2 focus:ring-softRed ring-1 ring-desaturatedRed border rounded-full py-4 pl-8 text-desaturatedRed placeholder:text-desaturatedRed"
+              type="text"
+              placeholder="Email Address"
+            />
+            <img
+              id="icon-error"
+              class="hidden w-5 h-5 absolute top-4 right-24"
+              src="./images/icon-error.svg"
+              alt="icon-error"
+            />
+            <div
+              id="submit-btn"
+              class="bg-lg2 hover:opacity-80 hover:shadow-2xl hover:cursor-pointer max-w-fit px-10 py-5 top-sm rounded-full absolute -right-1 shadow-xl"
+            >
+              <img src="./images/icon-arrow.svg" alt="submit-btn" />
+            </div>
+            <p
+              id="message"
+              class="hidden text-softRed text-left text-sm ml-8 mt-2"
+            >
+              Please provide a valid email
+            </p>
+          </div>
         </div>
       </div>
       <img class="md:hidden" src="./images/hero-mobile.jpg" alt="hero" />
